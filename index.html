@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashbaord</title>
+  </head>
+
+  <body>
+    <div class="text-center text-success bg-dark">
+        <h1>Weather Dashboard</h1>
+    </div>
+    <div class="container mt-auto">
+        <div class="col-4 float-left">
+            <nav class="navbar navbar-light bg-light shadow-lg p-3 mb-5 bg-white rounded">
+                <h4>Search for a City:</h4>
+                    <form class="form-inline">
+                        <input id="userInput" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button id="searchButton" class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                    </form> 
+                <form id="historySearch" class="mt-1"></form>
+            </nav>
+        </div>
+
+        <div class="col-8 float-right">
+            <div class="card bg-light text-dark p-2 rem shadow-lg p-3 mb-5 bg-white rounded" style="width: 710; height: 19rem;">
+                <div id="current-weather"></div> 
+                <div id="uvi"></div>
+            </div>
+            </br>
+                <h2>5-Day Forcast:</h2>
+                <div  id="fiveForecast" class="row"></div>
+            </div> 
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
