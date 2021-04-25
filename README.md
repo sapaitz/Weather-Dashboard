@@ -12,3 +12,6 @@ HTML, CSS, JavaScript, OpenWeather API
 
 # Deployment
 
+
+https://sapaitz.github.io/Weather-Dashboard/
+
